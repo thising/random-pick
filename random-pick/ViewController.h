@@ -10,6 +10,14 @@
 
 @interface ViewController : NSViewController
 
+@property IBOutlet NSButton *button;
+@property IBOutlet NSTextField *name;
+@property BOOL start;
+@property NSArray *names;
+@property NSTimer *timer;
+
+- (IBAction)buttonPressed:(id)sender;
+- (void)timerProcesser;
 
 @end
 
