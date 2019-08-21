@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		272C5643230DA6CB00C5AF7F /* start.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 272C5641230DA6CB00C5AF7F /* start.mp3 */; };
+		272C5644230DA6CB00C5AF7F /* stop.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 272C5642230DA6CB00C5AF7F /* stop.mp3 */; };
 		27B15D9A230D4A56003BB822 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B15D99230D4A56003BB822 /* AppDelegate.m */; };
 		27B15D9D230D4A56003BB822 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B15D9C230D4A56003BB822 /* ViewController.m */; };
 		27B15D9F230D4A5A003BB822 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27B15D9E230D4A5A003BB822 /* Assets.xcassets */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		272C5641230DA6CB00C5AF7F /* start.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = start.mp3; sourceTree = "<group>"; };
+		272C5642230DA6CB00C5AF7F /* stop.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = stop.mp3; sourceTree = "<group>"; };
 		27B15D95230D4A56003BB822 /* random-pick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "random-pick.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		27B15D98230D4A56003BB822 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		27B15D99230D4A56003BB822 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -109,6 +113,8 @@
 				27B15DA3230D4A5A003BB822 /* Info.plist */,
 				27B15DA4230D4A5A003BB822 /* main.m */,
 				27B15DA6230D4A5A003BB822 /* random_pick.entitlements */,
+				272C5641230DA6CB00C5AF7F /* start.mp3 */,
+				272C5642230DA6CB00C5AF7F /* stop.mp3 */,
 			);
 			path = "random-pick";
 			sourceTree = "<group>";
@@ -234,7 +240,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				272C5644230DA6CB00C5AF7F /* stop.mp3 in Resources */,
 				27B15D9F230D4A5A003BB822 /* Assets.xcassets in Resources */,
+				272C5643230DA6CB00C5AF7F /* start.mp3 in Resources */,
 				27B15DA2230D4A5A003BB822 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -427,12 +435,13 @@
 				CODE_SIGN_ENTITLEMENTS = "random-pick/random_pick.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 9TKY3UNE85;
+				DEVELOPMENT_TEAM = Q26X2DZY4W;
 				INFOPLIST_FILE = "random-pick/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ab.demo.random-pick";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -445,12 +454,13 @@
 				CODE_SIGN_ENTITLEMENTS = "random-pick/random_pick.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 9TKY3UNE85;
+				DEVELOPMENT_TEAM = Q26X2DZY4W;
 				INFOPLIST_FILE = "random-pick/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ab.demo.random-pick";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

@@ -12,11 +12,20 @@
 
 @property IBOutlet NSButton *button;
 @property IBOutlet NSTextField *name;
+@property IBOutlet NSTextView *tvNames;
+@property IBOutlet NSButton *btnSave;
+@property IBOutlet NSTextField *record;
+
 @property BOOL start;
-@property NSArray *names;
+@property NSMutableArray *names;
 @property NSTimer *timer;
+@property NSSound *startSound;
+@property NSSound *endSound;
 
 - (IBAction)buttonPressed:(id)sender;
+- (IBAction)importMenuAction:(id)sender;
+- (IBAction)saveButtonPressed:(id)sender;
+
 - (void)timerProcesser;
 
 @end
