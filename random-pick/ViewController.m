@@ -20,6 +20,7 @@
     _startSound = [[NSSound alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"start" ofType:@"mp3"] byReference:NO];
     _startSound.loops = YES;
     _endSound = [[NSSound alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"stop" ofType:@"mp3"] byReference:NO];
+    [_button setKeyEquivalent:@" "];
 }
 
 - (void)viewDidLayout {
@@ -61,7 +62,7 @@
         
         if (_start) {
             [_startSound play];
-            _timer = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(timerProcesser) userInfo:nil repeats:YES];
+            _timer = [NSTimer scheduledTimerWithTimeInterval:0.04 target:self selector:@selector(timerProcesser) userInfo:nil repeats:YES];
         } else {
             [_timer invalidate];
             [_startSound stop];
@@ -88,6 +89,7 @@
 
 - (IBAction)saveButtonPressed:(id)sender
 {
+    [[[NSApplication sharedApplication] keyWindow] makeFirstResponder:_button];
     _btnSave.hidden = YES;
     _tvNames.hidden = YES;
     

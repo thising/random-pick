@@ -435,7 +435,7 @@
 				CODE_SIGN_ENTITLEMENTS = "random-pick/random_pick.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = Q26X2DZY4W;
+				DEVELOPMENT_TEAM = 9TKY3UNE85;
 				INFOPLIST_FILE = "random-pick/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -454,7 +454,7 @@
 				CODE_SIGN_ENTITLEMENTS = "random-pick/random_pick.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = Q26X2DZY4W;
+				DEVELOPMENT_TEAM = 9TKY3UNE85;
 				INFOPLIST_FILE = "random-pick/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
